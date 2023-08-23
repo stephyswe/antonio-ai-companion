@@ -24,3 +24,28 @@ npx shadcn-ui@latest init
 npm i @trivago/prettier-plugin-sort-imports
 
 npm run format
+
+# Folder Setup
+
+...
+
+# Clerk Authentication
+
+www.clerk.com
+Sign in for free account
+Dashboard - Add application
+Application name: ai-companion
+
+- Provider: Google, Email
+- Create application
+- copy environment variables
+- add to .env
+- Continue in docs
+
+npm install @clerk/nextjs
+
+add to .env
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
