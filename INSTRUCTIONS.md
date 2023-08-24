@@ -57,3 +57,5 @@ npm i next-themes@latest
 npx shadcn-ui@latest add dropdown-menu
 
 # Sidebar
+
+npx shadcn-ui@latest add sheet

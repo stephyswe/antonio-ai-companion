@@ -8,6 +8,7 @@ import { Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { MobileSidebar } from "@/components/mobile-sidebar";
 
 const font = Poppins({ weight: "600", subsets: ["latin"] });
 
@@ -15,6 +16,7 @@ export const Navbar = () => {
   return (
     <div className="fixed z-50 flex items-center justify-between w-full h-16 px-4 py-2 border-b border-primary/10 bg-secondary">
       <div className="flex items-center">
+        <MobileSidebar />
         <Link href="/">
           <h1
             className={cn(
