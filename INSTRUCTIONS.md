@@ -59,3 +59,8 @@ npx shadcn-ui@latest add dropdown-menu
 # Sidebar
 
 npx shadcn-ui@latest add sheet
+
+# Search Filter
+
+npx shadcn-ui@latest add input
+npm i query-string
