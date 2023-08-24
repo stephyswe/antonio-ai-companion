@@ -64,3 +64,17 @@ npx shadcn-ui@latest add sheet
 
 npx shadcn-ui@latest add input
 npm i query-string
+
+# Category Filter (Prisma, PlanetScale)
+
+npm i -D prisma
+npx prisma init
+
+*Planetscale Config + add Category model
+
+npx prisma generate
+npx prisma db push
+npm i @prisma/client
+
+npx prisma studio
+node scripts/seed.ts
