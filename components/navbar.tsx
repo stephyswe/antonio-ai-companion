@@ -13,7 +13,7 @@ const font = Poppins({ weight: "600", subsets: ["latin"] });
 
 export const Navbar = () => {
   return (
-    <div className="fixed w-full z-50 flex justify-between items-center py-2 px-4 h-16 border-b border-primary/10 bg-secondary">
+    <div className="fixed z-50 flex items-center justify-between w-full h-16 px-4 py-2 border-b border-primary/10 bg-secondary">
       <div className="flex items-center">
         <Link href="/">
           <h1
@@ -29,7 +29,7 @@ export const Navbar = () => {
       <div className="flex items-center gap-x-3">
         <Button onClick={() => {}} size="sm" variant="premium">
           Upgrade
-          <Sparkles className="h-4 w-4 fill-white text-white ml-2" />
+          <Sparkles className="w-4 h-4 ml-2 text-white fill-white" />
         </Button>
 
         <ThemeToggle />

@@ -50,9 +50,10 @@ NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
 NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
 
-
 # Navbar
 
 npx shadcn-ui@latest add button
 npm i next-themes@latest
 npx shadcn-ui@latest add dropdown-menu
+
+# Sidebar
