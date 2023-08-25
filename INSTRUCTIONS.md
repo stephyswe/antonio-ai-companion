@@ -70,7 +70,7 @@ npm i query-string
 npm i -D prisma
 npx prisma init
 
-*Planetscale Config + add Category model
+\*Planetscale Config + add Category model
 
 npx prisma generate
 npx prisma db push
@@ -78,3 +78,19 @@ npm i @prisma/client
 
 npx prisma studio
 node scripts/seed.ts
+
+# Companion Creation Form (Cloudinary)
+
+<Companion model>
+npx prisma generate
+npx prisma db push
+
+npx shadcn-ui@latest add -y form
+npx shadcn-ui@latest add -y textarea
+npx shadcn-ui@latest add -y separator
+npx shadcn-ui@latest add -y select
+
+add NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME to .env
+Cloudinary - Settings - Upload - "Add Upload Preset - "Signing Mode - Unsigned" - "Save"
+
+- Copy add to NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET then components/image-upload.tsx
