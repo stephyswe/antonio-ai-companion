@@ -1,11 +1,14 @@
 "use client";
+
 import * as z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useRouter } from "next/navigation";
 import { Wand2 } from "lucide-react";
 import { Category, Companion } from "@prisma/client";
+import axios from "axios";
 
+import { useToast } from "@/components/ui/use-toast";
 import {
   Form,
   FormControl,
@@ -76,6 +79,7 @@ export const CompanionForm = ({
 }: CompanionFormProps) => {
   //const { toast } = useToast();
   const router = useRouter();
+  const { toast } = useToast();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -92,8 +96,7 @@ export const CompanionForm = ({
   const isLoading = form.formState.isSubmitting;
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
-    console.log("values", values);
-    /* try {
+    try {
       if (initialData) {
         await axios.patch(`/api/companion/${initialData.id}`, values);
       } else {
@@ -113,7 +116,7 @@ export const CompanionForm = ({
         description: "Something went wrong.",
         duration: 3000,
       });
-    } */
+    }
   };
 
   return (

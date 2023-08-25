@@ -94,3 +94,7 @@ add NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME to .env
 Cloudinary - Settings - Upload - "Add Upload Preset - "Signing Mode - Unsigned" - "Save"
 
 - Copy add to NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET then components/image-upload.tsx
+
+# Companion Creation API
+
+npx shadcn-ui@latest add -y toast
