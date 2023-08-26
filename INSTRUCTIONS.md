@@ -98,3 +98,11 @@ Cloudinary - Settings - Upload - "Add Upload Preset - "Signing Mode - Unsigned" 
 # Companion Creation API
 
 npx shadcn-ui@latest add -y toast
+
+# Companion List
+
+<Message model>
+npx prisma generate
+npx prisma db push
+
+npx shadcn-ui@latest add -y card
