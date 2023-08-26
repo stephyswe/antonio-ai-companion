@@ -106,3 +106,7 @@ npx prisma generate
 npx prisma db push
 
 npx shadcn-ui@latest add -y card
+
+# Chat Header
+
+npx shadcn-ui@latest add -y avatar
