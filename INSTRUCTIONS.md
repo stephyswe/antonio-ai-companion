@@ -149,4 +149,16 @@ https://platform.openai.com - login - "personal - view api keys" - create key: a
 .env
 OPENAI_API_KEY=
 
+# Chat API
+
+npm i dotenv
+npm i replicate
+npm i openai
+npm i openai-edge
+
+Replicate setup:
+https://replicate.com/ - login - profile - api tokens - create token: companion-tutorial - copy to .env
+
+.env
+REPLICATE_API_TOKEN=r8_3bo4eFLLlnosHzMd5eJqdaodnQomSoZ4cQvjq
 
