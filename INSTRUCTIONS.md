@@ -110,3 +110,9 @@ npx shadcn-ui@latest add -y card
 # Chat Header
 
 npx shadcn-ui@latest add -y avatar
+
+# Chat UI 
+
+npm i ai
+npm i react-spinners
+
